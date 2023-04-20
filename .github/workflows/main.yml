@@ -12,22 +12,5 @@
     build:
       runs-on: "ubuntu-latest"
       steps:
-        - name: "Checkout code"
+        - name: "echo test"
           uses: "actions/checkout@v2"
-        - name: "Build"
-          run: "# Add your build commands here Building..."
-    build_demo:
-      runs-on: "ubuntu-latest"
-      steps:
-        - name: "Checkout code"
-          uses: "actions/checkout@v2"
-        - name: "Build"
-          run: "# Add your build commands here Building..."
-    deploy:
-      needs: "build"
-      runs-on: "ubuntu-latest"
-      steps:
-        - name: "Checkout code"
-          uses: "actions/checkout@v2"
-        - name: "Deploy"
-          run: "# Add your deploy commands here Deploying..."
