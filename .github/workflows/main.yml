@@ -3,21 +3,21 @@ name: CI/CD Pipeline string
 on:
   push:
     branches:
-      - "master" 
+      - "master"
 
 jobs:
   build:
     runs-on: "ubuntu-latest"
 
     steps:
-#     - name: "Checkout code"
-#       uses: "actions/checkout@v2"
+    - name: "Checkout code"
+      uses: "actions/checkout@v2"
 
-#     - name: "Install dependencies"
-#       run: "npm ci"
+    - name: "Install dependencies"
+      run: "npm ci"
 
-#     - name: "Build and test"
-#       run: "npm run build"
-      
+    - name: "Build and test"
+      run: "npm run build"
+
     - name: "Print line"
-      run: "echo 'This is a printed line'"
+      run: echo "This is a printed line"
